@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",  // This will output compiled JavaScript files to the dist directory
+    "rootDir": "./src"   // This will treat the src directory as the root for TypeScript files
+  },
+  "include": [
+    "src/**/*.ts"            // This includes all .ts files inside the src directory
+  ],
+  "exclude": [
+    "node_modules"        // This excludes the node_modules folder
+  ]
+}

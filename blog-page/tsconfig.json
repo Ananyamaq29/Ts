@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es6",            // or "es2015" or later
+    "lib": ["dom", "es2015"],   // Ensure that "es2015" or later is included
+    "strict": true,             // Optional: Strict type checking for better safety
+    "module": "commonjs",       // Module system (can be "esnext" or "commonjs" based on your setup)
+    "esModuleInterop": true,    // Enable compatibility with CommonJS modules
+    "skipLibCheck": true        // Skip library checking for faster compilation (optional)
+  }
+}

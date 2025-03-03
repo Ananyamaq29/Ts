@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Chat Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="">
+    <h1>Chat Application</h1>
+  </header>
+
+  <div class="chat-container">
+    <section class="chat-window">
+      <div class="messages" id="messages">
+        
+      </div>
+
+      <div class="message-input">
+        <textarea id="input" rows="3" placeholder="Type message..."></textarea>
+        <button id="send-btn">Send</button>
+      </div>
+    </section>
+
+    <section class="user-list">
+      <h3>Online Users</h3>
+      <ul>
+        <li><span class="status online"></span> Ananya
+            <span class="display-status"></span></li>
+
+        <li><span class="status offline"></span> Amal
+            <span class="display-status"></span></li>
+
+        <li><span class="status online"></span> Tannu
+            <span class="display-status"></span></li>
+
+        <li><span class="status online"></span> Harsh
+            <span class="display-status"></span></li>
+            
+        <li><span class="status offline"></span> Sneha
+            <span class="display-status"></span></li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Chat Application</p>
+    <p>
+      <a href="">Privacy</a>
+      <a href="">Settings</a>
+      <a href="">More</a>
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

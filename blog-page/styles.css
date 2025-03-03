@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #F4EDD3;
+    margin: 0;
+    padding: 0;
+    background-color: #7E99A3;
+}
+header {
+    background-color: #4C585B;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 2px -2px gray;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav{
+    display: inline;
+}
+
+li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+a {
+    color: #a9a184;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#search-bar {
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+main {
+    display: flex;
+    margin: 2rem;
+}
+
+#blog-posts article {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+aside {
+    margin-left: 2rem;
+    color: #52666d;
+    background: linear-gradient(to bottom, #e0e2e6, #9cb2d3);
+    padding: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #F4EDD3;
+    text-align: center;
+    padding: 0.3rem;
+    width: 100%;
+}
+
+#subscription-form input {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#subscription-form button {
+    background-color: #55779b;
+    color: #F4EDD3;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+}

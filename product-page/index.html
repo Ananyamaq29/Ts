@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img id="logo" src="logo.png" alt="image">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <img src="product.jpg" alt="Image" class="product-image">
+            <h1>Headphones</h1>
+            <p>Experience superior sound quality with these premium headphones, designed for comfort and durability. Whether you're listening to music, gaming, or making calls, enjoy crystal-clear audio and noise isolation for an immersive experience. This is one of the best headphones, with best features in it.Experience superior sound quality with these premium headphones, designed for comfort and durability. Whether you're listening to music, gaming, or making calls, enjoy crystal-clear audio and noise isolation for an immersive experience. This is one of the best headphones, with best features in it.</p>
+            <p>Price : 2000/- </p>
+            <button id="buy-now-btn">Buy Now</button>
+        </section>
+
+        <section class="features">
+            <h2>Product Features</h2>
+            <p id="show-more-details">Show more Details</p>
+            <div id="more-details" style="display: none;">
+                <ul>
+                    <li> 1. Amazing performance</li>
+                    <li> 2. Long-lasting battery</li>
+                    <li> 3. Easy to use</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact">
+            <fieldset>
+                <legend><h2>Contact Us</h2></legend>
+                <form id="contact-form">
+                    <label for="">Name : </label>
+                    <input type="text" id="name" placeholder="Write your Name" required>
+                    <label for="">Email Address : </label>
+                    <input type="email" id="email" placeholder="Write your Email" required>
+                    <label for="">Drop your Message</label>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ProductCo</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

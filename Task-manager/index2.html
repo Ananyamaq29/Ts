@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Smart Task Manager</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" aria-label="Home">Home</a></li>
+                <li><a href="#my-tasks" aria-label="My Tasks">My Tasks</a></li>
+                <li><a href="#profile" aria-label="Profile">Profile</a></li>
+                <li><a href="#reports" aria-label="Reports">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="task-container">
+            <div id="task-input">
+                <h1>Create a New Task</h2>
+                <form id="task-form" onsubmit="return validateForm()">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required><br><br>
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description"></textarea><br><br>
+
+                    <label for="due-date">Due Date:</label>
+                    <input type="date" id="due-date" name="due-date" required><br><br>
+
+                    <label for="priority">Priority:</label>
+                    <select id="priority" name="priority" required>
+                        <option value="">Select...</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select><br><br>
+
+                    <button type="submit">Add Task</button>
+                    <div id="error-message"></div>
+                </form>
+            </div>
+
+            <div id="task-list">
+                <h2>My Tasks List</h2>
+                <ul id="tasks">
+                </ul>
+            </div>
+        </section>
+    
+        <!-- <section id="profile">
+            <h1>Profile</h2>
+            <img src="profile.jpg" alt="Profile picture"><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <button>Submit</button>
+
+        </section> -->
+    </main>
+
+    <footer>
+        <p>© 2025 Smart Task Manager. All rights reserved.</p>
+        <p>Contact us at: info@stm.com</p>
+    </footer>
+
+    <script src="/dict/task.js"></script>
+</body>
+</html>

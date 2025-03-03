@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",                     // Set the JavaScript version to which TypeScript will compile
+    "module": "commonjs",                 // Set the module system to CommonJS (suitable for Node.js or bundlers)
+    "strict": true,                       // Enable all strict type-checking options
+    "esModuleInterop": true,              // Allows default import syntax for CommonJS modules
+    "skipLibCheck": true,                 // Skip type checking of declaration files to speed up compilation
+    "forceConsistentCasingInFileNames": true, // Ensures consistent file name casing
+    "outDir": "./dist",                   // Directory where compiled JavaScript files will be placed
+    "rootDir": "./src",                   // Root directory for the TypeScript files
+    "allowJs": true,                      // Allows JavaScript files to be compiled as well
+    "resolveJsonModule": true,            // Allows importing `.json` files as modules
+    "noEmitOnError": true                 // Don't emit JavaScript files if there are compilation errors
+  },
+  "include": [
+    "src/**/*.ts"                         // Specifies the files to include for the TypeScript compilation
+, "dict/task.ts"  ],
+  "exclude": [
+    "node_modules"                        // Excludes `node_modules` folder to avoid unnecessary compilation
+  ]
+}
