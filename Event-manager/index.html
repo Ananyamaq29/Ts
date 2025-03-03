@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <header>
+            <img src="logo.png.png" alt="image">
+            <nav>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="">More</a>
+            </nav>
+        </header>
+    </section>
+    
+    <main>
+        <fieldset>
+            <legend>Create Events</legend>
+            <form action="" id="form-section">
+                <label for="">Name</label>
+                <input placeholder="Name" type="text" name="name" id="name">
+    
+                <label for="">Description</label>
+                <textarea placeholder="Description" name="" id="Description"></textarea>
+    
+                <label for="">Date</label>
+                <input type="datetime-local" id="datetime-local">
+
+                <button id="submit-btn">Submit</button>
+            </form>
+        </fieldset>
+
+        
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Date-Time</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            
+            <tbody id="tbody">
+                <!--event rows adds dynamically-->
+            </tbody>
+        </table>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 EventManagerCo</p>
+        <p>All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FBF5DD;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+
+img {
+    width: 50px;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color:#FBF5DD ;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #16404D;
+    padding: 10px;
+    color:  #FBF5DD;
+}
+
+nav{
+    margin: 15px;
+}
+
+a {
+    color:  #d7ac66;
+    margin: 10px 40px;
+    text-decoration: none;
+}
+
+fieldset{
+    margin: 3rem;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 1px 3px 5px rgb(69, 66, 56);
+}
+
+legend{
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+label{
+    margin: 7px 0;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input, textarea{
+    margin-bottom: 20px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 0.7rem;
+}
+
+#submit-btn {
+    margin: 20px 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #d0e7e3 ;
+}
+
+#submit-btn:hover{
+    background-color: #A6CDC6;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 1.3rem;
+    margin-right: 1rem;
+    border-style: solid;
+    border-radius: 15px;
+    border-spacing: 0; 
+    table-layout: fixed; 
+}
+
+thead, tbody {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    height: 20px; 
+    overflow: hidden; 
+}
+
+tbody {
+    display: block;
+    max-height: 300px; 
+}
+
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; 
+}
+
+.edit-btn, .delete-btn {
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    font-size: 0.7rem;
+    background-color: #A6CDC6;
+}
+
+.delete-btn {
+    font-size: 0.7rem;
+    background-color: #E27474;
+}
+
+.edit-btn:hover {
+    background-color: #8DBAB4;
+}
+
+.delete-btn:hover {
+    background-color: #D15C5C;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #16404D;
+    padding: 0.5rem;
+    margin-top: 2rem ;
+    font-size: 0.8rem;
+    color:  #FBF5DD;
+}
+
+p{
+    padding: 0.6rem;
+}
